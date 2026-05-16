@@ -59,7 +59,13 @@ const Portfolio = () => {
           Software Engineering student & Frontend Developer specializing in
           building high-fidelity, scalable web applications using{" "}
           <span className="text-white font-medium">React.js</span> and{" "}
-          <span className="text-white font-medium">Tailwind CSS</span>.
+          <span className="text-white font-medium">Tailwind CSS</span>. Actively
+          seeking{" "}
+          <span className="text-white font-medium">
+            Remote/On-site opportunities
+          </span>{" "}
+          in Frontend Development and AI integration to deliver commercial
+          value.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a
