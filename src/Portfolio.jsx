@@ -3,6 +3,18 @@ import React from "react";
 const Portfolio = () => {
   const projects = [
     {
+    title: "LogixChain",
+    category: "AI-Powered Supply Chain",
+    desc: "A smart supply chain management system utilizing Machine Learning to predict delivery statuses (Late, Advance, On-Time). Built with a robust FastAPI backend and a responsive TypeScript frontend.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "FastAPI", "Machine Learning"],
+    links: {
+    frontendGit: "https://github.com/muchaslam7-design/supplychain-frontend-app",
+    backendGit: "https://github.com/muchaslam7-design/supplychain-ai-engine",
+    frontendLive: "https://supplychain-frontend-app-av5k.vercel.app/prediction",
+    backendLive: "https://supplychain-frontend-app-av5k.vercel.app/"
+  }
+  },
+    {
       title: "Solemate",
       category: "E-Commerce Platform",
       desc: "A premium shoe retail application featuring custom grid-based product inventory management, integrated React Hook Form, responsive modals, dynamic search with interactive map logistics, custom cursors, and an engaging video background landing page.",
