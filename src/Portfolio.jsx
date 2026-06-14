@@ -7,12 +7,10 @@ const Portfolio = () => {
     category: "AI-Powered Supply Chain",
     desc: "A smart supply chain management system utilizing Machine Learning to predict delivery statuses (Late, Advance, On-Time). Built with a robust FastAPI backend and a responsive TypeScript frontend.",
     tech: ["React.js", "TypeScript", "Tailwind CSS", "FastAPI", "Machine Learning"],
-    links: {
-    frontendGit: "https://github.com/muchaslam7-design/supplychain-frontend-app",
+    github: "https://github.com/muchaslam7-design/supplychain-frontend-app",
+    live: "https://supplychain-frontend-app-av5k.vercel.app/",
     backendGit: "https://github.com/muchaslam7-design/supplychain-ai-engine",
-    frontendLive: "https://supplychain-frontend-app-av5k.vercel.app/prediction",
-    backendLive: "https://supplychain-frontend-app-av5k.vercel.app/"
-  }
+    backendLive: "https://supplychain-ai-engine-production.up.railway.app/",
   },
     {
       title: "Solemate",
@@ -139,24 +137,27 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4 text-sm font-semibold">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-[#deff9a] hover:underline"
-                  >
-                    Code ↗
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-neutral-500 hover:text-white transition-all"
-                  >
-                    Live Demo ↗
-                  </a>
-                </div>
+                <div className="flex flex-col gap-2 text-sm font-semibold">
+  {project.links ? (
+    // For LogixChain: It shows 4 buttons
+    <div className="flex flex-col gap-2">
+      <div className="flex gap-4">
+        <a href={project.links.frontendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Frontend Code ↗</a>
+        <a href={project.links.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
+      </div>
+      <div className="flex gap-4">
+        <a href={project.links.frontendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
+        <a href={project.links.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend API ↗</a>
+      </div>
+    </div>
+  ) : (
+    // For other projects: It shows the original 2 buttons
+    <div className="flex gap-4">
+      <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Code ↗</a>
+      <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Live Demo ↗</a>
+    </div>
+  )}
+</div>
               </div>
             </div>
           ))}
