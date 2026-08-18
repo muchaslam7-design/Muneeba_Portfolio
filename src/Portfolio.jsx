@@ -3,7 +3,7 @@ import React from "react";
 const Portfolio = () => {
   const projects = [
     {
-    title: "nestIQ",
+    title: "NestIQ",
     category: "AI Real Estate & Backend API",
     desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine. Showcases full-stack integration and machine learning pipeline implementation.",
     tech: ["React.js", "TypeScript", "Tailwind CSS", ".NET Core", "Python Flask", "Machine Learning"],
