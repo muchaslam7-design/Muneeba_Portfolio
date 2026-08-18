@@ -3,6 +3,16 @@ import React from "react";
 const Portfolio = () => {
   const projects = [
     {
+    title: "nestIQ",
+    category: "AI Real Estate & Backend API",
+    desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine. Showcases full-stack integration and machine learning pipeline implementation.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", ".NET Core", "Python Flask", "Machine Learning"],
+    github: "https://github.com/muchaslam7-design/nestIQ_Frontend",
+    live: "https://nest-iq-frontend-8lqf.vercel.app/",
+    backendGit: "https://github.com/muchaslam7-design/HousePriceProject",
+    backendLive: "https://www.loom.com/share/3b4e636990e34aa9a56fe6a5d4e3c23b", // Loom video link
+  },
+    {
     title: "LogixChain",
     category: "AI-Powered Supply Chain",
     desc: "A smart supply chain management system utilizing Machine Learning to predict delivery statuses (Late, Advance, On-Time). Built with a robust FastAPI backend and a responsive TypeScript frontend.",
@@ -66,15 +76,16 @@ const Portfolio = () => {
           ASLAM<span className="text-[#deff9a]">.</span>
         </h1>
         <p className="text-xl text-neutral-400 max-w-2xl leading-relaxed">
-          Software Engineering student & Frontend Developer specializing in
+          Software Engineering student & Full-Stack Developer with AI integration specializing in
           building high-fidelity, scalable web applications using{" "}
-          <span className="text-white font-medium">React.js</span> and{" "}
+          <span className="text-white font-medium">React.js</span>,{" "}
+          <span className="text-white font-medium">.NET Core</span>, and{" "}
           <span className="text-white font-medium">Tailwind CSS</span>. Actively
           seeking{" "}
           <span className="text-white font-medium">
             Remote/On-site opportunities
           </span>{" "}
-          in Frontend Development and AI integration to deliver commercial
+          in Full-Stack Development and Machine Learning integration to deliver commercial
           value.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
