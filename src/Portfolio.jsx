@@ -159,7 +159,7 @@ const Portfolio = () => {
       </div>
       <div className="flex gap-4">
         <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
-        <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Live ↗</a>
+        <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
       </div>
     </div>
   ) : (
