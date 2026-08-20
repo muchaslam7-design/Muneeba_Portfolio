@@ -5,7 +5,7 @@ const Portfolio = () => {
     {
     title: "NestIQ",
     category: "AI Real Estate & Backend API",
-    desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine. Note: Since the backend is hosted on a free-tier server, please refer to the Loom video walkthrough if the live prediction API takes a moment to spin up.",
+    desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine.",
     tech: ["React.js", "TypeScript", "Tailwind CSS", ".NET Core", "Python Flask", "Machine Learning"],
     github: "https://github.com/muchaslam7-design/nestIQ_Frontend",
     live: "https://nest-iq-frontend-8lqf.vercel.app/",
@@ -118,6 +118,9 @@ const Portfolio = () => {
         <h2 className="text-3xl font-bold tracking-tight mb-12 flex items-center gap-3">
           <span className="w-8 h-[2px] bg-[#deff9a]"></span> Featured Projects
         </h2>
+        <p className="text-xs text-neutral-400 max-w-md">
+    💡 <span className="text-[#deff9a] font-medium">Note:</span> Free-tier backend instances may experience spin-up delays or require code review via GitHub/Loom walkthroughs.
+  </p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
