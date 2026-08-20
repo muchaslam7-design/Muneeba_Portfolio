@@ -60,7 +60,7 @@ const Portfolio = () => {
       {/* Hero Section */}
       <header className="max-w-6xl mx-auto px-6 pt-24 pb-16 border-b border-neutral-900">
         <span className="text-[#deff9a] uppercase tracking-widest text-sm font-semibold">
-          Available for Paid Remote Internships
+          Open to Opportunities & Internships
         </span>
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight mt-4 mb-6">
           MUNEEBA <br />
