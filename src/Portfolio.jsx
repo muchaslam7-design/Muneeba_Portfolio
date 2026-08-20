@@ -20,7 +20,6 @@ const Portfolio = () => {
     github: "https://github.com/muchaslam7-design/supplychain-frontend-app",
     live: "https://supplychain-frontend-app-av5k.vercel.app/",
     backendGit: "https://github.com/muchaslam7-design/supplychain-ai-engine",
-    backendLive: "https://supplychain-ai-engine-production.up.railway.app/",
   },
     {
       title: "Solemate",
