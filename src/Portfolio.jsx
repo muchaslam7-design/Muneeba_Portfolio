@@ -3,24 +3,24 @@ import React from "react";
 const Portfolio = () => {
   const projects = [
     {
-    title: "NestIQ",
-    category: "AI Real Estate & Backend API",
-    desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine. Showcases full-stack integration and machine learning pipeline implementation.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", ".NET Core", "Python Flask", "Machine Learning"],
-    github: "https://github.com/muchaslam7-design/nestIQ_Frontend",
-    live: "https://nest-iq-frontend-8lqf.vercel.app/",
-    backendGit: "https://github.com/muchaslam7-design/HousePriceProject",
-    backendLive: "https://www.loom.com/share/3b4e636990e34aa9a56fe6a5d4e3c23b", // Loom video link
-  },
+      title: "NestIQ",
+      category: "AI Real Estate & Backend API",
+      desc: "An enterprise-grade real estate platform featuring a responsive React frontend, a secure C# ASP.NET Core Web API backend, and an AI-driven price prediction engine. Showcases full-stack integration and machine learning pipeline implementation.",
+      tech: ["React.js", "TypeScript", "Tailwind CSS", ".NET Core", "Python Flask", "Machine Learning"],
+      github: "https://github.com/muchaslam7-design/nestIQ_Frontend",
+      live: "https://nest-iq-frontend-8lqf.vercel.app/",
+      backendGit: "https://github.com/muchaslam7-design/HousePriceProject",
+      backendLive: "https://www.loom.com/share/3b4e636990e34aa9a56fe6a5d4e3c23b", // Loom video link
+    },
     {
-    title: "LogixChain",
-    category: "AI-Powered Supply Chain",
-    desc: "A smart supply chain management system utilizing Machine Learning to predict delivery statuses (Late, Advance, On-Time). Built with a robust FastAPI backend and a responsive TypeScript frontend.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", "FastAPI", "Machine Learning"],
-    github: "https://github.com/muchaslam7-design/supplychain-frontend-app",
-    live: "https://supplychain-frontend-app-av5k.vercel.app/",
-    backendGit: "https://github.com/muchaslam7-design/supplychain-ai-engine",
-  },
+      title: "LogixChain",
+      category: "AI-Powered Supply Chain",
+      desc: "A smart supply chain management system utilizing Machine Learning to predict delivery statuses (Late, Advance, On-Time). Built with a robust FastAPI backend and a responsive TypeScript frontend.",
+      tech: ["React.js", "TypeScript", "Tailwind CSS", "FastAPI", "Machine Learning"],
+      github: "https://github.com/muchaslam7-design/supplychain-frontend-app",
+      live: "https://supplychain-frontend-app-av5k.vercel.app/",
+      // Yahan se backendGit hata diya hai taake extra buttons show na hon
+    },
     {
       title: "Solemate",
       category: "E-Commerce Platform",
@@ -147,28 +147,26 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                {/* Button Section - Replace this part in Portfolio.jsx */}
-<div className="flex flex-col gap-2 text-sm font-semibold">
-  {project.backendGit ? (
-    // Agar project mein backendGit hai, toh 4 buttons dikhao
-    <div className="flex flex-col gap-2">
-      <div className="flex gap-4">
-        <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Frontend Code ↗</a>
-        <a href={project.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
-      </div>
-      <div className="flex gap-4">
-        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
-        <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
-      </div>
-    </div>
-  ) : (
-    // Warna sirf 2 buttons (baki projects ke liye)
-    <div className="flex gap-4">
-      <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Code ↗</a>
-      <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Live Demo ↗</a>
-    </div>
-  )}
-</div>
+                
+                <div className="flex flex-col gap-2 text-sm font-semibold">
+                  {project.backendGit ? (
+                    <div className="flex flex-col gap-2">
+                      <div className="flex gap-4">
+                        <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Frontend Code ↗</a>
+                        <a href={project.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
+                      </div>
+                      <div className="flex gap-4">
+                        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
+                        <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex gap-4">
+                      <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Code ↗</a>
+                      <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Live Demo ↗</a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
