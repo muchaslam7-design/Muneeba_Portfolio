@@ -149,27 +149,29 @@ const Portfolio = () => {
                 </div>
                 {/* Button Section - Replace this part in Portfolio.jsx */}
 <div className="flex flex-col gap-2 text-sm font-semibold">
-  {project.backendGit ? (
-    // Agar project mein backendGit hai, toh 4 buttons dikhao
-    <div className="flex flex-col gap-2">
-      <div className="flex gap-4">
-        <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Frontend Code ↗</a>
-        <a href={project.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
-      </div>
-      <div className="flex gap-4">
-        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
-        <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
-      </div>
-    </div>
-  ) : (
-    // Warna sirf 2 buttons (baki projects ke liye)
-    <div className="flex gap-4">
-      <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Code ↗</a>
-      <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Live Demo ↗</a>
-    </div>
-  )}
-</div>
-              </div>
+  {project.backendGit ? (
+    // Agar backendGit hai (NestIQ aur LogixChain dono ke liye), toh ye 3 buttons dikhaye ga
+    <div className="flex flex-col gap-2">
+      <div className="flex gap-4">
+        <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Frontend Code ↗</a>
+        <a href={project.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
+      </div>
+      <div className="flex gap-4">
+        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
+        {/* Backend Demo sirf tabhi aayega jab backendLive maujood ho (NestIQ ke liye) */}
+        {project.backendLive && (
+          <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
+        )}
+      </div>
+    </div>
+  ) : (
+    // Baqi normal projects ke liye sirf 2 buttons
+    <div className="flex gap-4">
+      <a href={project.github} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Code ↗</a>
+      <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Live Demo ↗</a>
+    </div>
+  )}
+</div>        </div>
             </div>
           ))}
         </div>
