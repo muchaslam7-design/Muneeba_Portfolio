@@ -157,7 +157,7 @@ const Portfolio = () => {
         <a href={project.backendGit} target="_blank" rel="noreferrer" className="text-[#deff9a] hover:underline">Backend Code ↗</a>
       </div>
       <div className="flex gap-4">
-        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Demo ↗</a>
+        <a href={project.live} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Frontend Live ↗</a>
         {/* Backend Demo sirf tabhi aayega jab backendLive maujood ho (NestIQ ke liye) */}
         {project.backendLive && (
           <a href={project.backendLive} target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-all">Backend Demo ↗</a>
