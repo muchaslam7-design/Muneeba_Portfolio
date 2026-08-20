@@ -53,14 +53,6 @@ const Portfolio = () => {
       github: "https://github.com/muchaslam7-design/Product-Gallery",
       live: "https://product-gallery-iota.vercel.app/",
     },
-    {
-      title: "Premium Landing Page",
-      category: "Web Architecture & UI",
-      desc: "Designed and developed a high-fidelity fully responsive landing page. Focused on modern layout structures, seamless typography, and optimized asset loading for premium performance metrics.",
-      tech: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/muchaslam7-design/premium-landing-page",
-      live: "https://premium-landing-page-iekj.vercel.app/",
-    },
   ];
 
   return (
@@ -184,11 +176,10 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-6 py-12 border-t border-neutral-900 text-center text-xs text-neutral-600">
-        <p>
-          © 2026 Muneeba Aslam. Built with React & Tailwind CSS. Sadiqabad,
-          Pakistan.
-        </p>
-      </footer>
+  <p>
+    © {new Date().getFullYear()} Muneeba Aslam. Designed & Built with passion.
+  </p>
+</footer>
     </div>
   );
 };
