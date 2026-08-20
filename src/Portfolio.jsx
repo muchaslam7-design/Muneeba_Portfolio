@@ -115,12 +115,14 @@ const Portfolio = () => {
 
       {/* Projects Section */}
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold tracking-tight mb-12 flex items-center gap-3">
-          <span className="w-8 h-[2px] bg-[#deff9a]"></span> Featured Projects
-        </h2>
-        <p className="text-xs text-neutral-400 max-w-md">
+       <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+  <h2 className="text-3xl font-bold tracking-tight flex items-center gap-3">
+    <span className="w-8 h-[2px] bg-[#deff9a]"></span> Featured Projects
+  </h2>
+  <p className="text-xs text-neutral-400 max-w-md bg-neutral-900/50 border border-neutral-800 p-3 rounded-xl">
     💡 <span className="text-[#deff9a] font-medium">Note:</span> Free-tier backend instances may experience spin-up delays or require code review via GitHub/Loom walkthroughs.
   </p>
+</div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
