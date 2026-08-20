@@ -120,7 +120,7 @@ const Portfolio = () => {
     <span className="w-8 h-[2px] bg-[#deff9a]"></span> Featured Projects
   </h2>
   <p className="text-xs text-neutral-400 max-w-md bg-neutral-900/50 border border-neutral-800 p-3 rounded-xl">
-    💡 <span className="text-[#deff9a] font-medium">Note:</span>Live links showcase frontend UIs; please check GitHub code or Loom walkthroughs for backend logic.
+    💡 <span className="text-[#deff9a] font-medium">Note: </span> Live links showcase frontend UIs; please check GitHub code or Loom walkthroughs for backend logic.
   </p>
 </div>
 
