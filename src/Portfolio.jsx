@@ -175,10 +175,12 @@ const Portfolio = () => {
       </main>
 
       {/* Footer */}
-      <footer className="max-w-6xl mx-auto px-6 py-12 border-t border-neutral-900 text-center text-xs text-neutral-600">
-  <p>
-    © {new Date().getFullYear()} Muneeba Aslam. Designed & Built with passion.
-  </p>
+      <footer className="max-w-6xl mx-auto px-6 py-12 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+  <div className="flex items-center gap-2">
+    <span className="w-2 h-2 rounded-full bg-[#deff9a] animate-pulse"></span>
+    <p>© {new Date().getFullYear()} Muneeba Aslam. All rights reserved.</p>
+  </div>
+  <p className="text-neutral-600">Designed with precision & passion.</p>
 </footer>
     </div>
   );
