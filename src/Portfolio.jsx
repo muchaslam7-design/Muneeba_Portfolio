@@ -12,6 +12,16 @@ const Portfolio = () => {
     backendGit: "https://github.com/muchaslam7-design/HousePriceProject",
     backendLive: "https://www.loom.com/share/3b4e636990e34aa9a56fe6a5d4e3c23b", // Loom video link
   },
+    {
+    title: "Scriptora",
+    category: "AI Content Studio & SaaS Platform",
+    desc: "A modern, minimalist AI content generation platform featuring dual input modes (manual typing & real-time Voice-to-Text via Web Speech API), secure JWT authentication, and automated MongoDB history tracking.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Google Gemini API"],
+    github: "https://github.com/muchaslam7-design/scriptora-frontend",
+    live: "https://scriptora-frontend-eight.vercel.app/",
+    backendGit: "https://github.com/muchaslam7-design/scriptora-backend",
+    backendLive: "https://www.loom.com/share/4f6a724645714861a15a6b84e2aa0f61", // Loom video link 
+  },
     {
     title: "LogixChain",
     category: "AI-Powered Supply Chain",
